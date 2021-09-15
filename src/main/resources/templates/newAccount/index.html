@@ -7,21 +7,38 @@
 <body>
 <h1> </h1>
 <p>
-    <label for="firstName">Imie:</label>
+    <label for="firstName">Name:</label>
     <input type="text" name="firstName" id="firstName" required>
-    <label for="lastName">Nazwisko:</label>
+    <label for="lastName">Surname:</label>
     <input type="text" name="lastName" id="lastName">
 </p>
 
 <p>
+    <label for="login">Login: </label>
+    <input type="text" name="logIn" id="login" required>
+
+</p>
+<label for="password">Password:</label>
+<form action="...">
+    <input type="password" name="nazwa" id="password" required>
+</form>
+</p>
+
+<p>
+    <label for="email">Addres email:</label>
+    <input type="text" name="email" id="email" required/>
+</p>
+
+<p>
     <label>Płeć:
-        <input type="radio" name="type" value="male"/> Męszczyzna
-        <input type="radio" name="type" value="female"/> Kobieta
+        <input type="radio" name="type" value="male"/> Male
+        <input type="radio" name="type" value="female"/> Female
     </label>
 </p>
+
 <p>
 <div>
-    <form action="index.php" method="post">Data urodzenia:
+    <form action="index.php" method="post">Date of birth:
         <input type="date" name="dateValue"></form>
 </div>
 </p>
