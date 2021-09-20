@@ -15,7 +15,7 @@ private MenuService menuService;
 
     @SneakyThrows
     @GetMapping("/res")
-    public List<Menudto> getHome() {
+    public List<MenuDto> getHome() {
         return menuService.getMenu();
     }
 }

@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
    <h1> <title>Reservation System</title> </h1>
+    <link rel="stylesheet" href="home/style.css" type="text/css" />
+
 
 </head>
-<h1> Welcome in out reservation system.</h1>
+<header>
 
+<h1> Welcome in our reservation system.</h1>
+
+    <nav>
+        <h2>
+            <p style="text-align: center">
+        <div th:replace="home/fragments/menu.html :: template(items=${menuItems})"></div>
+
+            </p>
+        </h2>
+    </nav>
+
+
+
+
+</header>
 <body>
-<div th:replace="home/fragments/menu.html :: template(items=${menuItems})"></div>
 
 </body>
 </html>

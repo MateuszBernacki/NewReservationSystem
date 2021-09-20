@@ -13,7 +13,8 @@
         <a class="p-2 text-muted"
            th:each="item : ${items}"
            th:text="${item.name}"
-           href="#">... menu template...</a>
+           th:href="${item.url}">... menu template...</a>
+
     </nav>
 </div>
 
