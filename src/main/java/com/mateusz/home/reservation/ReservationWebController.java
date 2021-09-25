@@ -13,15 +13,15 @@ public class ReservationWebController {
     @Autowired
     private MenuService menuService;
 
-@GetMapping("/reservation")
-public String getReservation(Model model){
-model.addAttribute("menuItems", menuService.getMenu());
-return "home/index";
-}
-
-    @RequestMapping(value = {"/newReservation2"}, method = RequestMethod.GET)
-    public String getnewReservation(Model model) {
-        return "newReservation/index.html";
+    @GetMapping("/reservation")
+    public String getReservation(Model model){
+        model.addAttribute("menuItems", menuService.getMenu());
+        return "home/index";
     }
+
+//    @RequestMapping(value = {"/reservation2"}, method = RequestMethod.GET)
+//    public String getnewReservation(Model model) {
+//        return "newReservation/index.html";
+//    }
 
 }
