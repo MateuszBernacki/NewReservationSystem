@@ -1,4 +1,4 @@
-package com.mateusz.home.newAccount;
+package com.mateusz.home.service;
 
 
 import org.springframework.stereotype.Service;
@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 public class NewAccountService {
 
     public String newAccountSer(){
-        return "newAccount//index.html";
+        return "newAccount//login.html";
     }
 }

@@ -1,11 +1,9 @@
-package com.mateusz.home.reservation;
+package com.mateusz.home.startOfReservation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class ReservationWebController {
@@ -18,10 +16,4 @@ public class ReservationWebController {
         model.addAttribute("menuItems", menuService.getMenu());
         return "home/index";
     }
-
-//    @RequestMapping(value = {"/reservation2"}, method = RequestMethod.GET)
-//    public String getnewReservation(Model model) {
-//        return "newReservation/index.html";
-//    }
-
 }

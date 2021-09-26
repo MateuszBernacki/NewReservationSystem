@@ -4,11 +4,10 @@ package com.mateusz.home.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -27,10 +26,9 @@ public class User {
     private String password;
     @Column(name = "EMAIL_ADDRESS", nullable = false)
     private String emailAddress;
-    @Column(name = "DATE_OF_BIRTH", nullable = false)
-    private Date dateOfBirth;
     @Column(name = "CREATION", nullable = false)
     private LocalDateTime create;
+
 
 
 }

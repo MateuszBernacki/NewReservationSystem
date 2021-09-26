@@ -1,4 +1,4 @@
-package com.mateusz.home.reservation;
+package com.mateusz.home.startOfReservation;
 
 
 import org.springframework.stereotype.Service;
@@ -11,8 +11,7 @@ public class MenuService {
     public List<MenuDto> getMenu() {
         return List.of(
                 new MenuDto("New reservation.","/newReservation"),
-                new MenuDto("Create account.", "/newAccount"),
-                new MenuDto("Log in.", "/startLogin")
+                new MenuDto("Create account.", "/newAccount")
             );
     }
 }

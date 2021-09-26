@@ -1,4 +1,4 @@
-package com.mateusz.home.reservation;
+package com.mateusz.home.startOfReservation;
 
 public class MenuDto {
 
